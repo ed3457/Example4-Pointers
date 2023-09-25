@@ -28,6 +28,9 @@ int main()
 	int ar[10];
 
 	int size;
+
+	//int ar2[size];
+
 	cout << "Enter the size of the array:" << endl;
 	cin >> size; 
 	int* pAr = new int[size];
@@ -39,6 +42,17 @@ int main()
 		cin >> pAr[i]; 
 	}
 
+	int* p2 = pAr;
+
+	for (int i = 0;i <= size;i++)
+	{
+		cout << *p2 << endl;
+		p2++;
+
+	}
+
+
+	delete[] pAr; // releases the memory back 
 
 
 
